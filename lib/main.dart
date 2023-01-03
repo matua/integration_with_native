@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../views/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -7,7 +8,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,9 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: const MyHomePage(
-          title: 'Integration with native frmo page'
-              ''),
+      home: const HomePage(),
     );
   }
 }
