@@ -60,6 +60,7 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+    namespace 'com.matuageorge.integration_with_native'
 }
 
 flutter {

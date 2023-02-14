@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:integration_with_native/views/autorotate.dart';
 
 import '../views/home_page.dart';
 
@@ -11,13 +12,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.green,
+    return AutoRotate(
+      enable: false,
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.green,
+        ),
+        home: const HomePage(),
       ),
-      home: const HomePage(),
     );
   }
 }
